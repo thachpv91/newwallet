@@ -1,3 +1,4 @@
+#!/bin/sh
 
 #	<groupId>org.bitcoinj</groupId>
 #	<artifactId>digitalcoinj-core</artifactId>

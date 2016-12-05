@@ -38,9 +38,15 @@ II. Build
 
         # Execute commands from ".bashrc" file 
         source ~/.bashrc
-    3. Install bapcoinj-lib
-        ./setup.sh
-        
+
+    3. Make && Install bapcoinj-lib
+        # make lib
+        ./_make_libs.sh
+
+        # install lib
+        ./_setup.sh
+
+
     4. Make apk
         mvn clean install -Dmaven.test.skip=true
 
