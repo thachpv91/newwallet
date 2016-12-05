@@ -16,6 +16,7 @@
 
 package org.bitcoinj.params;
 
+import org.bitcoinj.core.CoinDefinition;
 import org.bitcoinj.core.Block;
 import org.bitcoinj.core.NetworkParameters;
 
