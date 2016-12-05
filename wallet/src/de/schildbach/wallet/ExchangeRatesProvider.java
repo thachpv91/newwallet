@@ -279,7 +279,7 @@ public class ExchangeRatesProvider extends ContentProvider
 
 
 
-
+    	/** thachpv temporary rem here
         //final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
         // Keep the LTC rate around for a bit
         Double btcRate = 0.0;
@@ -359,12 +359,15 @@ public class ExchangeRatesProvider extends ContentProvider
         {
             x.printStackTrace();
         }
-
+		
+        return null;
+        */
         return null;
     }
 
     private static Object getCoinValueBTC_BTER()
     {
+    	/** thachpv rem 
         //final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
         // Keep the LTC rate around for a bit
         Double btcRate = 0.0;
@@ -418,7 +421,7 @@ public class ExchangeRatesProvider extends ContentProvider
         {
             x.printStackTrace();
         }
-
+		*/
         return null;
     }
 

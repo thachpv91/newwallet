@@ -14,3 +14,37 @@ I. Maven
     3. Skip test
     	mvn clean install -Dmaven.test.skip=true
 
+II. Build
+    1. Install Java
+        # search:   apt-cache search oracle-java 
+
+        sudo apt-get install oracle-java8-installer  
+
+    2. Install android sdk
+
+        # download android sdk
+        wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+        tar -xvf android-sdk_r24.2-linux.tgz
+
+        # install all sdk packages
+        cd android-sdk-linux/tools
+        ./android update sdk --no-ui
+
+        #ANDROID_HOME && PATH 
+        # Add the following to your ~/.bashrc file.
+
+        export ANDROID_HOME=$HOME/Android/android-sdk-linux
+        export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+        # Execute commands from ".bashrc" file 
+        source ~/.bashrc
+    3. Install bapcoinj-lib
+        ./setup.sh
+        
+    4. Make apk
+        mvn clean install -Dmaven.test.skip=true
+
+III. Debug
+    1. Install DDMS
+        sudo apt-get update
+        sudo apt-get install androidsdk-ddms

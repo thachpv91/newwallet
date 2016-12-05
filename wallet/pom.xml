@@ -90,10 +90,10 @@
 		<!-- com.google.bitcoin.* -->
 			<dependency>
 			<groupId>org.bitcoinj</groupId>
-			<artifactId>digitalcoinj-core</artifactId>
+			<artifactId>bapcoinj-core</artifactId>
 			<version>0.12.3</version>
 
-   			<!-- thach rem
+   			<!-- thach rem bapcoinj-core-0.12.3.jar
    			<scope>system</scope>
    			<systemPath>/home/bapvn/Downloads/BitCoinWallets/AndroidWallets/digitalcoinj-core-0.12.3.jar</systemPath>
    			-->
