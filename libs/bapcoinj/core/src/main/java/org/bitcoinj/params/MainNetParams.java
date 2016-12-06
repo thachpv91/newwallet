@@ -56,8 +56,24 @@ public class MainNetParams extends NetworkParameters {
         CoinDefinition.initCheckpoints(checkpoints);
 
         dnsSeeds = CoinDefinition.dnsSeeds;
-        // extraNonce and the same outputs but appeared at different heights, and greatly complicated re-org handling.
 
+        // httpSeeds = null; 
+        /*new HttpDiscovery.Details[] {
+                // Mike Hearn
+                new HttpDiscovery.Details(
+                        ECKey.fromPublicOnly(Utils.HEX.decode("027a79143a4de36341494d21b6593015af6b2500e720ad2eda1c0b78165f4f38c4")),
+                        URI.create("http://main.seed.vinumeris.com/peers")
+                ),
+                // Andreas Schildbach
+                new HttpDiscovery.Details(
+                        ECKey.fromPublicOnly(Utils.HEX.decode("0238746c59d46d5408bf8b1d0af5740fe1a6e1703fcb56b2953f0b965c740d256f")),
+                        URI.create("http://httpseed.bitcoin.schildbach.de/peers")
+                )
+        };*/
+        /* thachpv rem, config addrSeeds in SeedPeers.java
+        addrSeeds = new int[] {
+                0x0eb0c35e, 0xc0a80006
+        };*/
     }
 
     private static MainNetParams instance;
