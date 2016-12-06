@@ -13,6 +13,9 @@ This project contains several sub-projects:
      A minimal example app to demonstrate integration of digital payments into
      your Android app.
 
+
+### Now you are ready follow the [notes](https://github.com/thachpv91/newwallet/blob/master/notes) to build project.
+
 Build lib:
 
 `./_make_libs.sh`
@@ -28,6 +31,7 @@ Buill all sub-project
 or
 
 `./make.sh`
+
 
 Install apk
 
