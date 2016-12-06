@@ -180,6 +180,14 @@
 							<proguard>
 								<skip>false</skip>
 							</proguard>
+							<!-- hanh added to fixed "GC overhead limit exceeded"-->
+						    <dex>
+						    	<jvmArguments>
+						    		<jvmArgument>-Xms1024m</jvmArgument>
+						    		<jvmArgument>-Xmx1024m</jvmArgument>
+						    	</jvmArguments>
+						    </dex>
+						    <!-- hanh end-->
 						</configuration>
 						<dependencies>
 							<dependency>
