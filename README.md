@@ -1,4 +1,4 @@
-Welcome to _bapcoin Wallet_, a standalone digitalcoin payment app for your Android device!
+Welcome to _Bapcoin Wallet_, a standalone digitalcoin payment app for your Android device!
 
 This project contains several sub-projects:
 
@@ -13,6 +13,22 @@ This project contains several sub-projects:
      A minimal example app to demonstrate integration of digital payments into
      your Android app.
 
-You can build all sub-projects at once using Maven:
+Build lib:
 
-`mvn clean install`
+`./_make_libs.sh`
+
+Setup lib to local repository
+
+`./setup.sh`
+
+Buill all sub-project
+
+`mvn clean install -Dmaven.test.skip=true` 
+
+	or
+
+`./make.sh`
+
+Install apk
+
+`./install.sh`
