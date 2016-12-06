@@ -14,7 +14,7 @@ This project contains several sub-projects:
      your Android app.
 
 
-### Now you are ready follow the [notes](https://github.com/thachpv91/newwallet/blob/master/notes) to build project.
+### Now you are ready follow the [notes](https://github.com/thachpv91/newwallet/blob/master/notes.md) to build project.
 
 Build lib:
 
