@@ -93,13 +93,21 @@
        					<artifactId>android-maven-plugin</artifactId>
       					<version>3.8.2</version>
 						<configuration>
-						<sdk>
-							<platform>21</platform>
-						</sdk>
-					<deleteConflictingFiles>true</deleteConflictingFiles>
-					<undeployBeforeDeploy>true</undeployBeforeDeploy>
-					</configuration>
-					<extensions>true</extensions>
+						    <sdk>
+						    	<platform>21</platform>
+						    </sdk>
+						    <!-- hanh added to fixed "GC overhead limit exceeded"-->
+						    <dex>
+						    	<jvmArguments>
+						    		<jvmArgument>-Xms1024m</jvmArgument>
+						    		<jvmArgument>-Xmx1024m</jvmArgument>
+						    	</jvmArguments>
+						    </dex>
+						    <!-- hanh end-->
+							<deleteConflictingFiles>true</deleteConflictingFiles>
+							<undeployBeforeDeploy>true</undeployBeforeDeploy>
+						</configuration>
+						<extensions>true</extensions>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
